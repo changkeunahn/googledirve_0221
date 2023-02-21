@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: videop_processing
+  labels:
+    app: videop_processing
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+  selector:
+    app: videop_processing
